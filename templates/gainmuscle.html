@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Muscle tech workouts</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Cardo:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/assets1/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/assets1/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/assets1/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="static/assets1/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/assets1/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="static/assets1/css/main.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: PhotoFolio - v1.0.0
+  * Template URL: https://bootstrapmade.com/photofolio-bootstrap-photography-website-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center fixed-top">
+    <div class="container-fluid d-flex align-items-center justify-content-between">
+
+      <a href="/" class="logo d-flex align-items-center  me-auto me-lg-0">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="static/assets1/img/logo.png" alt=""> -->
+        <br><br><h1>MUSCLE TECH</h1>
+      </a>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+  
+          <li><a href="workouts">workouts</a></li>
+          <li><a href="/gallery">gallery</a></li>
+          <li><a href="/contact">contact</a></li>
+          <li class="dropdown"><a href="#" class="active"><span>Membership</span> <i class="bi bi-chevron-down dropdown-indicator"></i></a>
+            <ul>
+              <li><a href="/join">Enroll</a></li>
+              <li><a href="/attendance">Attendance</a></li>
+            
+              <li><a href="/viewprofile">View Profile</a></li>
+            </ul>
+          </li>
+          {% if not request.user.is_authenticated %}
+          <li><a href="/signup">Signin</a></li>
+          {% else %}
+          <li><a href="/logout">Logout</a></li>
+          {%endif %}
+        </ul>
+      </nav><!-- .navbar -->
+
+      <a href="/join" class="get-started-btn scrollto">Enroll now</a>
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" data-aos="fade" data-aos-delay="1500">
+    <div class="page-header d-flex align-items-center">
+      <div class="container position-relative">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2>8 Best Workouts To Gain Muscle.</h2>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Page Header -->
+   <!-- ======= About Section ======= -->
+   <section id="about" class="about">
+    <div class="container">
+     
+     <br>
+      <div class="row gy-4 justify-content-center">
+        <div class="col-lg-4">
+          <img src="static/assets1/img/gallery/buildmuscle.webp" class="img-fluid" alt="">
+        </div>
+        <div class="col-lg-5 content">
+          <h2>Important Things</h2>
+           <div class="row">
+            <div class="col-lg-12">
+              <ul>
+                <li><i class="bi bi-chevron-right"></i> <strong>Men mainly try to lose some weight and gain as much muscle mass as possible.</strong> </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>But, there are men who want to gain weight and try to do everything to increase their mass.</strong> </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>It might sound easy, but it’s not that simple.</strong> </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>It’s very important to take care of your diet before you start going to the gym.</strong> </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>There are some ingredients that can help you increase your muscle mass.</strong> </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>Your training is the next important thing. (1)</strong> </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>You need to do exercises that will stimulate and activate your muscles to grow.</strong> </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>So, today I’ll talk about the best workouts to gain muscle.</strong> </li>
+                <li><i class="bi bi-chevron-right"></i> <strong>But first things first.</strong> </li>
+              </ul>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="section-header">
+        <p>How long should your training last ?</p>
+      <div>
+      <div class="section-answer">
+        <p> To gain muscle mass you need short, intensive training, lasting no longer than an hour.</p>
+        <p>When you weightlift you spend the reserves of carbs and glycone after an hour. </p>
+        <p> A training that lasts more than 1 hour can lead to not completely recovering your muscles and losing strength and muscle mass.</p>
+    </div>
+    <br>
+    <div class="section-header">
+      <p>How many times a week do you need to train to build muscle mass ?</p>
+    </div>
+    <div class="col-lg-4">
+      <img src="static/assets1/img/gallery/3.jpg" class="img-fluid1" alt="">
+    </div>
+    <br>
+    <div class="section-answer">
+      <p> You shouldn’t weightlift more than 2 days in a row per week.</p>
+    </div>
+    <div class="section-header">
+      <p>Why ?</p>
+      <div>
+    <div class="section-answer">
+       <p>Because you can feel exhausted, your muscles won’t recover well enough, and you might get injured.</p>
+       <p>So, make a 1-day break after 2 consecutive days of weightlifting.</p>
+       <p>The best would be to weightlift 4 times a week.</p>
+    </div>
+    <br>
+    <p><strong>How i do that ?</strong></p>
+    <ul>
+      <li><i class="bi bi-chevron-right"></i><strong>Monday :</strong><span>Chest and triceps</span></li>
+      <li><i class="bi bi-chevron-right"></i><strong>Tuesday :</strong><span>Leg day</span></li>
+      <li><i class="bi bi-chevron-right"></i><strong>Wednesday :</strong><span>Rest</span></li>
+      <li><i class="bi bi-chevron-right"></i><strong>Thursday :</strong><span>Back day</span></li>
+      <li><i class="bi bi-chevron-right"></i><strong>Friday :</strong><span>Shoulders and biceps</span></li>
+    </ul>
+
+    <div class="section-header">
+      <p>How many sets and reps do you need ?</p>
+    <div>
+    <div class="section-answer">
+      <p>Everything between 6-15 reps per set is good, but I suggest you do 8-10 reps.</p>
+      <p>This is the optimal number to enhance muscle growth and muscle recovery between sets.</p>
+      <p>3 sets per exercise are optimal.</p>
+    </div>
+    <br>
+    <div class="section-header">
+      <p>How long should you rest between sets?</p>
+     <div>
+    <div class="section-answer">
+      <p> It’s recommended to rest about 90 secs.</p>
+      <p>That way you can do different types of exercises and you will have enough time to rest in order not to exhaust your muscles.</p>
+      <p> Well, it’s time to see which exercises to do to gain muscles.</p>
+    </div>
+    <br>
+    <br>
+    <div class="section-header">
+       <h1>8 best workouts to gain muscle</h1>
+    </div> 
+    <div class="section-header">
+      <p>1. Squats</p>
+    </div>
+    <div class="col-xl-5 center">
+      <img src="static/assets1/img/gallery/12.jpg" class="img-fluid1" alt="">
+    </div>
+    <div class="section-answer">
+      <p>Squats is one of the most basic exercises you can do with weights. </p>
+      <p>This exercise strengthens your legs mainly, but it’s also good for your abs and your lower back. </p>
+      <p>If you do squats with weights, don’t risk the form and depth of your squats just to squat with more weight. </p>
+      <p>Control every move and make sure you go down with your thighs parallel to the floor. </p>
+    </div>
+     <br>
+    <div class="section-header">
+      <p>2. Deadlift</p>
+    </div>
+    <div class="col-xl-5 center">
+      <img src="static/assets1/img/gallery/deadlift.jpg" class="img-fluid1" alt="">
+    </div>
+    <br>
+    <div class="section-answer">
+      <p>Deadlifting is probably one of the best exercises for overall building your legs and lower back. </p>
+      <p>Deadlifting is excellent if your purpose is building muscles and improving your strength. </p>
+      <p>This is a very demanding exercise that activates practically all your muscles. </p>
+      <p>If you are in good shape and you make sure your back is straight, you can deadlift pretty big weights. </p>
+      <br>
+      <p> This is how I recommend deadlifting:</p>
+      <p>5 sets </p>
+      <p>5 reps </p>
+    </div>
+    <br>
+    <div class="section-header">
+      <p>3. Bench-press</p>
+    </div>
+    <div class="col-xl-5 center">
+      <img src="static/assets1/img/gallery/benchpress.jpeg" class="img-fluid1" alt="">
+    </div>
+    <br>
+    <div class="section-answer">
+      <p>No doubt, this is the most common exercise at the gym. </p>
+      <p>It’s the best workout for building your chest muscles. </p>
+      <p>You can exercise on a regular bench, but I advise you to try incline bench press to build your upper chest.</p>
+      <p>I recommend 3 sets with 8 reps.</p>
+    </div>
+    <br>
+    <div class="section-header">
+      <p>4. Pullups</p>
+    </div>
+    <div class="col-xl-5 center">
+      <img src="static/assets1/img/gallery/pullup.jpg" class="img-fluid1" alt="">
+    </div>
+    <br>
+    <div class="section-answer">
+      <p>One of the most popular exercises performed with your own weight.</p>
+       <p> It works best for your back and it’s also good for your shoulders, abs, and biceps.</p>
+        <p>It might be difficult to do your first pull up, but if you try hard you will see the advantages this exercise has for your muscles.</p>
+        <p>Change the grip or the angle when you lift your body so that you stimulate different parts of your body.</p>
+        <p>When you get in better shape you can do this exercise with weights.</p>
+    </div>
+     <br>
+    <div class="section-header">
+      <p>5. Dips</p>
+    </div>
+    <div class="col-xl-5 center">
+      <img src="static/assets1/img/gallery/dips.jpg" class="img-fluid1" alt="">
+    </div>
+    <br>
+    <div class="section-answer">
+      <p>Another great exercise with your own weight.</p>
+      <p>It builds your chest and triceps. </p>
+      <p>Tip: Lean forward a bit to include your chest muscles more or keep your body straight to include your triceps more. </p>
+      <p>The same goes for dips as for pull-ups, when you manage to do 10 reps easily, start doing dips with weights. </p>
+    </div>
+    <br>
+    <div class="section-header">
+      <p>6. Bent over rowing</p>
+    </div>
+    <div class="col-xl-5 center">
+      <img src="static/assets1/img/gallery/bent.gif" class="img-fluid1" alt="">
+    </div>
+    <br>
+    <div class="section-answer">
+      <p>There are different variations of rowing and they are all great for your back.</p>
+      <p>Bent over rowing is the best and most efficient. </p>
+      <p>But, it is the hardest. </p>
+      <p>Well, there are no results without hours and hours of sweating. </p>
+      <p> It develops your back muscles and the effect on your body is a bigger production of testosterone.</p>
+      <p>Do 3 sets with 8-12 reps.</p>
+    </div>
+    <br>
+    <div class="section-header">
+      <p>7. Overhead press (military press)</p>
+    </div>
+    <div class="col-xl-5 center">
+      <img src="static/assets1/img/gallery/overhead.gif" class="img-fluid1" alt="">
+    </div>
+    <br>
+    <div class="section-answer">
+      <p>One of the best workouts to gain muscle.</p>
+      <p>To build muscles you need to get up and give up the backrest and do this exercise standing.</p>
+      <p>When you do this exercise for the first time do it with lighter weights.</p>
+      <p>Do 3 sets with 10 reps. </p>
+    </div>
+    <br>
+    <div class="section-header">
+      <p>8. EZ bar biceps curl</p>
+    </div>
+    <div class="col-xl-5 center">
+      <img src="static/assets1/img/gallery/ez.jpg" class="img-fluid1" alt="" align="center">
+    </div>
+    <br>
+    <div class="section-answer">
+      <p>Also, one of the most common exercises at the gym.</p>
+      <p>It is #1 on my best biceps workouts. </p>
+      <p>If you do it right, you can grow some awesome biceps.</p>
+      <p>Put your elbows near your body, straighten your back and do the exercise without moving your body. </p>
+      <p> Do 3 sets with 10 reps.</p>
+      
+    </div>
+
+
+  </section><!-- End About Section -->
+<!-- ======= Footer ======= -->
+<footer id="footer">
+    
+  <div class="container">
+    <div class="copyright">
+      &copy; Copyright <strong><span>MUSCLE TECH</span></strong>. All Rights Reserved
+    </div>
+    <div class="credits">
+      <!-- All the links in the footer should remain intact. -->
+      <!-- You can delete the links only if you purchased the pro version. -->
+      <!-- Licensing information: https://bootstrapmade.com/license/ -->
+      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/gp-free-multipurpose-html-bootstrap-template/ -->
+      Designed by <a href="http://darsion.herokuapp.com">Darshan</a>
+    </div>
+  </div>
+</footer><!-- End Footer -->
+
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  
+  <!-- Vendor JS Files -->
+  <script src="static/assets1/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/assets1/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="static/assets1/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/assets1/vendor/aos/aos.js"></script>
+  <script src="static/assets1/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="static/assets1/js/main.js"></script>
+
+</body>
+
+</html>

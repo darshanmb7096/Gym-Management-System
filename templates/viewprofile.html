@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}
+Profile
+{% endblock title %}
+{% block head %}
+
+ 
+
+  <div class="row">
+  
+     <div class="col-md-12">
+  
+  
+      {% for post in posts %}
+         <div class="list-group">
+          <a href="#" class="list-group-item  bg-warning text-white" >
+           <h2>ENROLLMENT DETAILS</h2>
+            </a>
+  
+                      <a class="list-group-item">Name : {{post.FullName}} </a>
+                      <a class="list-group-item">Email : {{post.Email}}</a>
+                      <a class="list-group-item">Gender : {{post.Gender}}</a>
+                      <a class="list-group-item">PhoneNumber : {{post.PhoneNumber}}</a>
+                      <a class="list-group-item">DOB : {{post.DOB}}</a>
+                      <a class="list-group-item">Membership Plan : {{post.SelectMembershipplan}}</a>
+                      <a class="list-group-item">Trainer : {{post.SelectTrainer}}</a>
+                      <a class="list-group-item">Refered by : {{post.Reference}}</a>
+                      <a class="list-group-item">Address : {{post.Address}}</a>
+                      <a class="list-group-item">Payment Status: {{post.paymentStatus}}</a>
+                      <a class="list-group-item">Amount Paid :{{post.Price}}</a>
+                      <a class="list-group-item">Upcoming Due Date: {{post.DueDate}}</a>
+                      <a class="list-group-item">Joining date : {{post.timeStamp}}</a>
+                    </div>
+         
+     {% endfor %}
+       
+      
+
+    
+    </div>
+  </div> 
+
+{% endblock head %}
+{%block body%}
+
+
+ {%endblock body%}      

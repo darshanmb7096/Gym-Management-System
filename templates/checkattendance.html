@@ -1,0 +1,60 @@
+{% extends 'base.html' %} 
+{% block title %} Check Attendance {% endblock title%}
+          {% block head %}
+          
+        <h1>Your Attendance</h1>
+          <br>
+             
+            <div class="col-md-12">
+                 
+                <div class="icon-box"> 
+                <table class="table">
+                  <thead class="thead-warning  bg-warning text-white">
+                    <tr>
+                    
+                      <th scope="col">Date</th>
+                      <th scope="col">Login</th>
+                      <th scope="col">Logout</th>
+                      <th scope="col">Workout</th>
+                      <th scope="col">Trained By</th>
+                    </tr>
+                  </thead>
+                  <tbody class="tbody-white text-white">
+          
+                    {% for attend in attendance %}
+                    <tr>
+                      
+                      <td>{{attend.Selectdate}}</td>
+                      <td>{{attend.Login}}</td>
+                      <td>{{attend.Logout}}</td>
+                      <td>{{attend.SelectWorkout}}</td>
+                      <td>{{attend.TrainedBy}}</td>
+                      
+                     
+                   
+                      
+                     
+                    </tr>
+                    {% endfor %}
+                  
+                  </tbody>
+                </table>
+                <div class="col-md-8"> 
+              
+              </div>
+              
+              
+              
+              
+              
+              </div>
+          
+          
+          
+          
+          {% endblock head %}
+      </div>
+
+      
+    </div>
+ 
